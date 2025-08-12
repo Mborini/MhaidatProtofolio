@@ -13,16 +13,12 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import {
-  SiDotNet,
-  SiJavascript,
-  SiTypescript,
-  SiGraphql,
-  SiReact,
-  SiNextDotJs,
-  SiNodeDotJs,
-  SiDocker,
-} from 'react-icons/si'
-import { GiCoffeePot } from 'react-icons/gi'
+  GiRecycle,
+  GiRecycleBin,
+  GiFactory,
+  GiRoad,
+  GiTeamUpgrade,
+} from 'react-icons/gi'
 import { IoMdOpen } from 'react-icons/io'
 
 type ISkillSetModal = {
@@ -32,7 +28,7 @@ type ISkillSetModal = {
 const Detail = ({ onOpen }: ISkillSetModal) => {
   const emphasis = useColorModeValue('teal.500', 'cyan.200')
   const currentYear = new Date().getFullYear()
-  const professionalYears = currentYear - 2016
+  const professionalYears = currentYear - 2020 // يبدأ 2020 حسب سيرته
 
   return (
     <Stack
@@ -48,72 +44,61 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
           fontVariantCaps: 'small-caps',
         }}
       >
-        What i do.
+        What I do.
       </Heading>
       <Text variant="description">
-        I`ve been coding professionally for {professionalYears} years now and
-        currently working as a <b>Software Engineer</b> that focuses on{' '}
-        <b>architecture</b>, <b>APIs</b>,{' '}
+        With 5+ years in environmental consultancy, I design sustainable waste
+        management plans integrating technical methods and community needs.{' '}
         <Tooltip
-          label="Ha!. Or more accurately TECH DEBT"
-          aria-label="Tech Debt?"
+          label="Designing efficient and sustainable waste collection systems"
+          aria-label="Route Optimization"
           hasArrow
         >
           <Text as="span" variant="emphasis">
-            <b>nitty-gritty business logics</b>
+            <b>sustainable waste solutions</b>
           </Text>
         </Tooltip>{' '}
-        and even <b>front end integration</b> stuff now, how time flies!
+        I lead projects on route optimization and recycling, ensuring efficient
+        and lasting results.
         <br /> <br />
-        Here are few technologies that are cup of my{' '}
-        <Tooltip
-          label="I only drink tea if I needed too!"
-          aria-label="I hate Tea!"
-          hasArrow
-        >
-          <Text as="span" variant="emphasis" textDecorationLine="line-through">
-            tea
-          </Text>
-        </Tooltip>{' '}
-        coffee <Icon as={GiCoffeePot} color={emphasis} />.
+        Here are a few areas I’m passionate about and work with daily:
       </Text>
 
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDotNet} color={emphasis} fontSize="2em" />
-            C# - .NET.Core
+            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
+            Municipal Solid Waste Management
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiJavascript} color={emphasis} fontSize="2em" />
-            Javascript (ES6+)
+            <ListIcon as={GiRecycleBin} color={emphasis} fontSize="2em" />
+            Recycling Systems Design
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiTypescript} color={emphasis} fontSize="2em" />
-            Typescript
+            <ListIcon as={GiFactory} color={emphasis} fontSize="2em" />
+            Waste Facility Operations
           </ListItem>
-
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNodeDotJs} color={emphasis} fontSize="2em" />
-            Node
+            <ListIcon as={GiRoad} color={emphasis} fontSize="2em" />
+            Collection Route Optimization
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiGraphql} color={emphasis} fontSize="2em" />
-            Graphql
+            <ListIcon as={GiTeamUpgrade} color={emphasis} fontSize="2em" />
+            Stakeholder & Community Engagement
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiReact} color={emphasis} fontSize="2em" />
-            React
+            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
+            Waste Sorting & Material Recovery
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiNextDotJs} color={emphasis} fontSize="2em" />
-            NextJS
+            <ListIcon as={GiFactory} color={emphasis} fontSize="2em" />
+            Institutional Capacity Building
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={SiDocker} color={emphasis} fontSize="2em" />
-            Docker
+            <ListIcon as={GiRoad} color={emphasis} fontSize="2em" />
+            Environmental Impact Assessment
           </ListItem>
         </List>
         <Box>
@@ -124,7 +109,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See my full arsenal <Icon as={IoMdOpen} />
+            See full expertise <Icon as={IoMdOpen} />
           </Text>
         </Box>
       </SimpleGrid>

@@ -44,10 +44,9 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={1}
-            title="Tobira!"
-            src="/works/tobira/IphoneX-tobira.webp"
-            description="Japanese social media platform for travelers to show off their
-          adventure to the world. I was incharge of Front end integration, made using React, Antd and Styled Components."
+            title="Site Assessments and Project Monitoring"
+            src="/projects/Analysis-pana.svg"
+            description="Managed project progress and deliverables, developed budgets, conducted site assessments for waste management facilities, and ensured high-quality outcomes across multiple environmental projects."
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://tobira-app-test.netlify.app/"
             objectPosition="right 20%"
@@ -58,9 +57,11 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={2}
-            title="RSV"
-            description="RSV is a smart contract (ERC20) powered reservation system. I am incharge of backend using NET.Core 2.1."
-            src="/works/rsv.webp"
+            title="Pilot Waste Collection Optimization"
+            description=" Enhanced waste collection efficiency by optimizing routes and bin placements. Verified route optimization and developed emergency contingency plans.
+
+"
+            src="/projects/Waste management-rafiki (1).svg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://solution.rsv.ltd/jp"
             isMobile={isMobile}
@@ -70,9 +71,9 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={3}
-            title="Agora School"
-            description="A quizz - reviewer LMS, I made as a freelancer. Backend were powered by PHPSlim and VueJS for Front end."
-            src="/works/agora.webp"
+            title="Developing Local Solid Waste Management Plans"
+            description="Supported municipalities in designing and developing integrated and sustainable solid waste management plans. Conducted gap analysis on administrative, technical, financial, and social aspects. Proposed sorting and recycling measures and advised on institutional frameworks for efficient service delivery."
+            src="/projects/Garbage management-rafiki.svg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://dev.agora-school.com"
             objectPosition="right 20%"
@@ -83,9 +84,9 @@ const FeaturedWorksSection = () => {
         <MotionGridItem colSpan={6} variants={fadeInUpSlower}>
           <FeaturedCard
             idx={4}
-            title="TMH Layla EC"
-            description="A Japanese Semi-conductor e-commerce made at my old place at IVP. I was working with backend using ASP.NET MVC"
-            src="/works/tmh.webp"
+            title="Route Optimization and Assessment of Solid Waste Management Machineries"
+            description="Optimized waste collection system by improving collection routes and bin distribution within municipalities. Verified optimized routes and developed contingency plans for emergencies."
+            src="/projects/Location search-amico.svg"
             height={{ base: '130px', md: '225px', '2xl': '300px' }}
             ctaUrl="https://www.layla-ec.com/"
             isMobile={isMobile}

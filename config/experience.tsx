@@ -1,10 +1,10 @@
 import { Link } from '@chakra-ui/react'
 
-export type Company = 'Deloitte' | 'SCG' | 'Blotocol'
+export type Company = 'GREENPLANS' | 'UNDP' | 'Oxfam' | 'FCM' | 'DIMETRIC'
 
 export type CompanyDetail = {
   name: string
-  longName: string
+  longName?: string
   subDetail?: string
   url: string
   position: string
@@ -19,145 +19,118 @@ export type CompanyDetail = {
 export const Experiences: {
   [key in Company]: CompanyDetail
 } = {
-  Deloitte: {
-    name: 'Deloitte',
-    longName: 'Deloitte Consulthing Phils. Delivery Center',
-    subDetail: 'Consulthing Phils. Delivery Center',
-    url: 'https://www2.deloitte.com/',
-    position: 'Software Engineer Consultant',
-    duration: 'Sep 2021 - Present',
+  GREENPLANS: {
+    name: 'GREENPLANS',
+    longName: 'GREENPLANS Environmental Consultations Co. Ltd.',
+    url: 'https://greenplans.com',
+    position: 'Environmental Engineer',
+    duration: 'Jan 2020 - Present',
     logo: {
-      light: '/worked_at_logos/deloitte/Deloitte_logo_black.png',
-      dark: '/worked_at_logos/deloitte/Deloitte_logo.png',
+      light: '/worked_at_logos/greenplans.png',
+      dark: '/worked_at_logos/greenplans.png',
     },
     roles: [
       <>
-       Contributed to the design and development of a comprehensive .NET payment integration project for a client
-       That covered credit card payments and subscription management.
-       Introduced Stripe as a new payment provider within the system architecture.
-       Participated in triaging, fixing and adding new functionalitiesto multiple Azure powered APIs of the same client.
+        Manage and monitor multiple environmental projects including solid waste management and wastewater treatment.
       </>,
       <>
-        Worked as a Sitecore Backend on new{' '}
-        <Link
-          aria-label="Deloitte Digital AU"
-          href="https://www.deloittedigital.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Deloitte Digital AU Site.
-        </Link>
+        Develop budgets, oversee project deliverables, and conduct site assessments for waste management facilities.
       </>,
       <>
-        Udergone training for .NET Sitecore 10,
-        Sitecore SXA and different topologies it provides.{' '} and Passed {' '}
-        <Link
-          aria-label="Sitecore 10 .NET Developer Certification"
-          href="/certification/Lawingco-Sitecore 10 NET Developer Cert.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Sitecore 10 .NET Developer Certification.
-        </Link>
+        Collaborate with public and private stakeholders to ensure compliance with safety and environmental regulations.
       </>,
     ],
   },
-  SCG: {
-    name: 'Scentregroup',
-    longName: 'Scentregroup Limited AU',
-    subDetail: 'via Prosource BPO',
-    url: 'https://www.scentregroup.com/',
-    position: 'Software Engineer',
-    duration: 'Feb 2020 - Sep 2021',
+  UNDP: {
+    name: 'UNDP',
+    url: 'https://www.undp.org',
+    position: 'Route Optimization Expert',
+    duration: 'May 2022 - Aug 2022',
     logo: {
-      light: '/worked_at_logos/scg/SCG_400x400.jpg',
-      dark: '/worked_at_logos/scg/SCG.png',
+      light: '/worked_at_logos/R.png',
+      dark: '/worked_at_logos/R.png',
     },
     roles: [
       <>
-        Revamping the legacy Partner Portal into a new{' '}
-        <Link
-          aria-label="Westfield Marketing Hub"
-          href="https://partner.scentregroup.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield Marketing Hub
-        </Link>{' '}
-        using NextJS and Typescript. Restructuring the old express app into a
-        newer architectural design approach.
+        Optimized municipal solid waste collection routes and bin placements in Tafileh Governorate.
       </>,
       <>
-        Created multiple Contentful and Bynder extensions to improve BX process
-        better.
+        Developed contingency plans for waste collection emergencies.
       </>,
       <>
-        Worked on maintaining{' '}
-        <Link
-          variant="primaryLink"
-          href="https://www.westfield.com.au/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Westfield
-        </Link>{' '}
-        main site and Graphql apis written in NodeJS.
-      </>,
-      <>
-        Migrating of existing marketing email related tools and batch jobs from
-        Responsys into new platform called Braze.
-      </>,
-      <>
-        Hired at early 2020, first major task was helping with selecting a new
-        marketing vendor that can scale and also enable us to have
-        personalisation as well, selecting{' '}
-        <Link
-          aria-label="Braze"
-          href="https://www.braze.com/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Braze
-        </Link>{' '}
-        as a result.
+        Verified and improved operational efficiency of local waste management systems.
       </>,
     ],
   },
-  Blotocol: {
-    name: 'Blotocol',
-    longName: 'Blotocol Philippines',
-    subDetail: 'formerly IVP Global Inc.',
-    url: 'https://blotocol.com/',
-    position: 'Senior Software Engineer',
-    duration: 'Nov 2016 - Feb 2020',
+  Oxfam: {
+    name: 'Oxfam',
+    url: 'https://www.oxfam.org',
+    position: 'Environmental Expert',
+    duration: 'May 2022 - Aug 2022',
     logo: {
-      light: '/worked_at_logos/ivp/blotocol_logo-dark.png',
-      dark: '/worked_at_logos/ivp/blotocol-logo-white.png',
+      light: '/worked_at_logos/oxfam.png',
+      dark: '/worked_at_logos/oxfam.png',
     },
     roles: [
       <>
-        Developed a Twitter Raffle Campaign / Contest Bot called Camps with
-        statistics similar to Facebook Ads.
+        Developed local solid waste management plans for five municipalities focusing on sustainable and community-supported solutions.
       </>,
       <>
-        In 2019 got promoted as Senior Software Engineer and worked with Cryto
-        Exchange, Smart Contracts and other APIs using several techs such as
-        NodeJS, .NET Core and React.
+        Conducted gap analyses on administrative, technical, and financial aspects of partner municipalities.
       </>,
       <>
-        Create highly scalable Japanese e-commerce sites. Most notable clients
-        were TV Tokyo, Layla EC using .NET.
+        Advised on institutional frameworks to improve solid waste management service delivery.
+      </>,
+    ],
+  },
+  FCM: {
+    name: 'Federation of Canadian Municipalities (FCM)',
+    url: 'https://fcm.ca',
+    position: 'Route Optimization Expert / Environmental Consultant',
+    duration: 'Dec 2021 - Present',
+    logo: {
+      light: '/worked_at_logos/fcm.png',
+      dark: '/worked_at_logos/fcm.png',
+    },
+    roles: [
+      <>
+        Supported pilot projects optimizing waste collection in municipalities like Um Al Basateen and Al Jezah.
       </>,
       <>
-        Hired at 2016, Undergone Japanese language training first. Shortly
-        after, worked with in-house .NET MVC Framework called ERS.
+        Verified optimized routes and bin distributions for improved efficiency.
+      </>,
+      <>
+        Assisted in developing sustainable waste management institutional frameworks.
+      </>,
+    ],
+  },
+  DIMETRIC: {
+    name: 'DIMETRIC',
+    url: 'https://dimetric.com',
+    position: 'Environmental Expert and Deputy Project Manager',
+    duration: 'Oct 2020 - Present',
+    logo: {
+      light: '/worked_at_logos/dimetric.png',
+      dark: '/worked_at_logos/dimetric.png',
+    },
+    roles: [
+      <>
+        Led and advised on solid waste management planning for partner municipalities.
+      </>,
+      <>
+        Conducted comprehensive gap analyses and developed technical and institutional solutions.
+      </>,
+      <>
+        Facilitated capacity building and community engagement in waste management strategies.
       </>,
     ],
   },
 }
 
 export const ExperiencesList = [
-  Experiences.Deloitte,
-  Experiences.SCG,
-  Experiences.Blotocol,
+  Experiences.GREENPLANS,
+  Experiences.UNDP,
+  Experiences.Oxfam,
+  Experiences.FCM,
+  Experiences.DIMETRIC,
 ]

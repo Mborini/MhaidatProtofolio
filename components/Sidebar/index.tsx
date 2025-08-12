@@ -70,7 +70,7 @@ const Sidebar = () => {
             textTransform="uppercase"
             variants={fadeInUp}
           >
-            Marc Jhon
+            Ahamd
           </MotionHeading>
           <MotionHeading
             as="h2"
@@ -82,7 +82,7 @@ const Sidebar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Lawingco.
+            Mhaidat
           </MotionHeading>
           <MotionText
             colorScheme="gray"
@@ -90,17 +90,21 @@ const Sidebar = () => {
             className={styles.marginTopForce}
             variants={fadeInUp}
           >
-            Or you could call me KL. That works too . . .
+            Or you could call me 
+            <Text as="span" variant="emphasis">
+              {''} Volt. {' '}
+            </Text>
+            That works too . . .
           </MotionText>
 
           <MotionHeading
             as="h3"
-            size="md"
+            size="small"
             variant="emphasis"
             className={styles.marginTopSmall}
             variants={fadeInUp}
           >
-            Software Engineer
+            Environmental Engineer & Waste Management Expert{' '}
           </MotionHeading>
 
           <MotionText
@@ -111,12 +115,15 @@ const Sidebar = () => {
             maxWidth={{ base: '100%', lg: '80%' }}
           >
             Hey! How nice of you to look at my personal site,
-            <Text variant="emphasis" as="span">
+            <Text variant="emphasis"  as="span">
               {' '}
               Thank you!
             </Text>
-            <br />I am software engineer that specializes at backend apis, front
-            end integration, recently found myself studying UX too.
+            <br />
+            <br />I specialize in municipal solid waste management with over 3
+            years of experience. I focus on optimizing collection routes and
+            developing practical waste solutions by working closely with public
+            and private stakeholders.
           </MotionText>
           <MotionButton
             size="lg"

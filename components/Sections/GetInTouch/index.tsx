@@ -2,7 +2,7 @@ import { memo } from 'react'
 import { Heading, Text, Stack, Link, Icon, Box } from '@chakra-ui/react'
 import { motion, Variants } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill } from 'react-icons/ri'
+import { RiHeartPulseFill, RiCopyleftLine, RiGithubFill, RiLinkedinBoxFill } from 'react-icons/ri'
 const rimuruVariant: Variants = {
   shake: {
     rotate: [0, 15, 0, -15, 0],
@@ -26,6 +26,7 @@ const rimuruVariant: Variants = {
 
 const GetInTouch = () => {
   const [ref, inView] = useInView()
+  const y = new Date().getFullYear()
   return (
     <Stack
       width={{ base: '99%', lg: '60%', xl: '75%' }}
@@ -52,16 +53,17 @@ const GetInTouch = () => {
         </Text>
       </Heading>
       <Text variant="description">
-        Though, I am fairly introverted myself. I do reply to messages as long
-        as my human interaction battery lasts. Coding, work, movies or even weeb
-        stuff, anything is cool. So feel free to message me on any of my social
-        media or shoot me an{' '}
+        I’m always thrilled to connect with curious minds and passionate people.
+        Whether you want to chat about innovative environmental solutions, swap
+        ideas, or just say hello — I’m all ears! Don’t be shy, hit me up on any
+        of my socials or drop me a message. Let’s make something awesome
+        together!{" "}
         <Link
           href="mailto:marcjhon18@gmail.com"
           target="_blank"
           rel="noreferrer"
         >
-          email
+         {" "} email
         </Link>
         .
       </Text>
@@ -77,14 +79,14 @@ const GetInTouch = () => {
           variant="description"
           textDecoration="none"
           rel="noreferrer"
-          href="https://github.com/klawingco/kl_portfolio"
+          href="www.linkedin.com/in/mohammad-borini"
           target="_blank"
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
-            <Icon as={RiGithubFill} h={6} w={6} /> <br />
+            <Icon as={RiLinkedinBoxFill} h={6} w={6} /> <br />
             Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            KL Lawingco <Icon as={RiCopyleftLine} /> 2021
+            MBorini <Icon as={RiCopyleftLine} /> {y}
           </Text>
         </Link>
       </Box>
