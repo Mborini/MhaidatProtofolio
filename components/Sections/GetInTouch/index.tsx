@@ -84,9 +84,9 @@ const GetInTouch = () => {
           _focus={{ boxShadow: 'none' }}
         >
           <Text as="span">
-            <Icon as={RiLinkedinBoxFill} h={6} w={6} /> <br />
-            Designed and Made with <Icon as={RiHeartPulseFill} /> <br />
-            MBorini <Icon as={RiCopyleftLine} /> {y}
+            <Icon as={RiLinkedinBoxFill as any} h={6} w={6} /> <br />
+            Designed and Made with <Icon as={RiHeartPulseFill as any} /> <br />
+            MBorini <Icon as={RiCopyleftLine as any} /> {y}
           </Text>
         </Link>
       </Box>

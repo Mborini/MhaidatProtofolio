@@ -130,7 +130,7 @@ const ExperienceTab = () => {
                     justifyContent="flex-start"
                   >
                     <ListIcon
-                      as={BiRightArrow}
+                      as={BiRightArrow as any}
                       color={emphasis}
                       display="block"
                     />
