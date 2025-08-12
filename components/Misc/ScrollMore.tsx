@@ -77,7 +77,7 @@ const ScrollMore = () => {
             <Icon
               w={6}
               h={6}
-              as={RiMouseLine}
+              as={RiMouseLine as any}
               color="currentColor"
               opacity="0.75"
             />
