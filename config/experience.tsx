@@ -40,7 +40,8 @@ export const Experiences: {
         Collaborate with public and private stakeholders to ensure compliance with safety and environmental regulations.
       </>,
     ],
-  },DIMETRIC: {
+  },
+  DIMETRIC: {
     name: 'DIMETRIC',
     url: 'https://dimetric.net',
     position: 'Environmental Expert and Deputy Project Manager',
@@ -88,8 +89,8 @@ export const Experiences: {
     position: 'Environmental Expert',
     duration: 'May 2022 - Aug 2022',
     logo: {
-      light: '/worked_at_logos/oxfam.png',
-      dark: '/worked_at_logos/oxfam.png',
+      light: '/worked_at_logos/Oxfam.png',
+      dark: '/worked_at_logos/Oxfam.png',
     },
     roles: [
       <>
@@ -109,8 +110,8 @@ export const Experiences: {
     position: 'Route Optimization Expert / Environmental Consultant',
     duration: 'Dec 2021 - Present',
     logo: {
-       light: '/worked_at_logos/fcm.png',
-      dark: '/worked_at_logos/fcm.png',
+       light: '/worked_at_logos/FCM.png',
+      dark: '/worked_at_logos/FCM.png',
     },
     roles: [
       <>
