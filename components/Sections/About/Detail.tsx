@@ -66,37 +66,37 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
       <SimpleGrid columns={2} spacing={4}>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRecycle as any} color={emphasis} fontSize="2em" />
             Municipal Solid Waste Management
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRecycle as any} color={emphasis} fontSize="2em" />
             Recycling Systems Design
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiFactory} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiFactory as any} color={emphasis} fontSize="2em" />
             Waste Facility Operations
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRoad} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRoad as any} color={emphasis} fontSize="2em" />
             Collection Route Optimization
           </ListItem>
         </List>
         <List spacing={3}>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiTeamUpgrade} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiTeamUpgrade as any} color={emphasis} fontSize="2em" />
             Stakeholder & Community Engagement
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRecycle as any} color={emphasis} fontSize="2em" />
             Waste Sorting & Material Recovery
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiFactory} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiFactory as any} color={emphasis} fontSize="2em" />
             Institutional Capacity Building
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRoad} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRoad as any} color={emphasis} fontSize="2em" />
             Environmental Impact Assessment
           </ListItem>
         </List>
@@ -108,7 +108,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             textAlign="left"
             onClick={onOpen}
           >
-            See full expertise <Icon as={IoMdOpen} />
+            See full expertise <Icon as={IoMdOpen as any} />
           </Text>
         </Box>
       </SimpleGrid>
