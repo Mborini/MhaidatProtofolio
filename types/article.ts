@@ -9,4 +9,5 @@ export interface Article {
   url: string
   tag_list: string[]
   social_image: string
+  organization: string
 }
