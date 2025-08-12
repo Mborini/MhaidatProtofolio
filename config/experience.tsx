@@ -40,6 +40,26 @@ export const Experiences: {
         Collaborate with public and private stakeholders to ensure compliance with safety and environmental regulations.
       </>,
     ],
+  },DIMETRIC: {
+    name: 'DIMETRIC',
+    url: 'https://dimetric.net',
+    position: 'Environmental Expert and Deputy Project Manager',
+    duration: 'Oct 2020 - Present',
+    logo: {
+      light: '/worked_at_logos/dimetric.png',
+      dark: '/worked_at_logos/dimetric.png',
+    },
+    roles: [
+      <>
+        Led and advised on solid waste management planning for partner municipalities.
+      </>,
+      <>
+        Conducted comprehensive gap analyses and developed technical and institutional solutions.
+      </>,
+      <>
+        Facilitated capacity building and community engagement in waste management strategies.
+      </>,
+    ],
   },
   UNDP: {
     name: 'UNDP',
@@ -89,7 +109,7 @@ export const Experiences: {
     position: 'Route Optimization Expert / Environmental Consultant',
     duration: 'Dec 2021 - Present',
     logo: {
-      light: '/worked_at_logos/fcm.png',
+       light: '/worked_at_logos/fcm.png',
       dark: '/worked_at_logos/fcm.png',
     },
     roles: [
@@ -104,27 +124,7 @@ export const Experiences: {
       </>,
     ],
   },
-  DIMETRIC: {
-    name: 'DIMETRIC',
-    url: 'https://dimetric.com',
-    position: 'Environmental Expert and Deputy Project Manager',
-    duration: 'Oct 2020 - Present',
-    logo: {
-      light: '/worked_at_logos/dimetric.png',
-      dark: '/worked_at_logos/dimetric.png',
-    },
-    roles: [
-      <>
-        Led and advised on solid waste management planning for partner municipalities.
-      </>,
-      <>
-        Conducted comprehensive gap analyses and developed technical and institutional solutions.
-      </>,
-      <>
-        Facilitated capacity building and community engagement in waste management strategies.
-      </>,
-    ],
-  },
+  
 }
 
 export const ExperiencesList = [

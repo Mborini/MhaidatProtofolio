@@ -14,19 +14,19 @@ import {
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
 import styles from './styles.module.css'
-import { easing, DURATIONS } from 'config/animations'
+import { easing, DURATIONS, simpleOpacity } from 'config/animations'
+import { useDisclosure } from '@chakra-ui/react'
+import SkillSetModal from './SkillSetModal' // صحح المسار حسب مكان الملف عندك
 
 export type FeaturedCardProps = {
-  // Still can't find what's correct value for responsive value
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   height: string | ResponsiveValue<any>
   src: string
   idx: number
   title: string
-  description: string
+  description?: string
   objectPosition?: string
-  ctaUrl: string
   isMobile?: boolean
+  onClick?: () => void // <-- أضف هذا
 }
 
 const variants = {
@@ -52,18 +52,17 @@ const variants = {
 }
 
 const MotionImage = motion(Image)
-
+const MotionButton = motion(Button)
 const ProjectDescription = ({
   idx,
   title,
   description,
-  ctaUrl,
   isLeft,
 }: {
   idx?: number
   title: string
-  description: string
-  ctaUrl: string
+  description?: string
+
   isLeft: boolean
 }) => (
   <Container
@@ -107,19 +106,23 @@ const ProjectDescription = ({
     >
       {description}
     </Text>
-    <Button
-      variant="outlineAlternative"
-      fontWeight="light"
-      fontSize={{ base: 'sm', '2xl': 'md' }}
-      size="sm"
+ <MotionButton
+      size="lg"
+            variant="outline"
+            borderWidth="1px"
+            borderRadius="0"
+            fontWeight="normal"
+            fontSize="sm"
+            width="120px"
+            variants={simpleOpacity}
+      rounded="md"
       as="a"
-      href={ctaUrl}
       rel="noreferrer"
       target="_blank"
       marginY={{ base: 3, md: 0 }}
     >
-      View Project
-    </Button>
+      View Details
+    </MotionButton>
   </Container>
 )
 
@@ -130,15 +133,17 @@ const FeaturedCard = ({
   title,
   description,
   objectPosition,
-  ctaUrl,
+
   isMobile,
+  onClick, // <-- استقبل هنا
 }: FeaturedCardProps) => {
   const isLeftImage = isMobile ? false : idx % 2 === 0
   const bg = useColorModeValue('blackAlpha.50', 'whiteAlpha.200')
   const CoverImage = () => (
     <MotionImage
-      height={height}
-      width="100%"
+      height={typeof height === 'string' ? `calc(${height} * 0.75)` : height} // تصغير الارتفاع بنسبة 75%
+      maxWidth="90%" // أو قيمة تناسبك لتصغير العرض
+      mx="auto" // لجعل الصورة في الوسط أفقياً
       src={src}
       alt={title}
       objectFit="cover"
@@ -159,6 +164,16 @@ const FeaturedCard = ({
       className={styles.featureCard}
       borderColor={bg}
       borderWidth="1px"
+      onClick={onClick}
+      cursor="pointer"
+      role="button"
+      tabIndex={0}
+      onKeyDown={(e: React.KeyboardEvent<HTMLDivElement>) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault()
+          onClick && onClick()
+        }
+      }}
     >
       <SimpleGrid
         columns={{ base: 1, md: 2 }}
@@ -167,16 +182,11 @@ const FeaturedCard = ({
         flexDirection={{ base: 'column-reverse', md: 'initial' }}
       >
         {isLeftImage && <CoverImage />}
-        <ProjectDescription
-          idx={idx}
-          title={title}
-          description={description}
-          ctaUrl={ctaUrl}
-          isLeft={isLeftImage}
-        />
+        <ProjectDescription idx={idx} title={title} isLeft={isLeftImage} />
         {!isLeftImage && <CoverImage />}
       </SimpleGrid>
     </Box>
   )
 }
+
 export default FeaturedCard

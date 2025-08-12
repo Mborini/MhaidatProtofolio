@@ -59,7 +59,7 @@ const GetInTouch = () => {
         of my socials or drop me a message. Let’s make something awesome
         together!{" "}
         <Link
-          href="mailto:marcjhon18@gmail.com"
+          href="mailto:ahmadmhaidat73@gmail.com"
           target="_blank"
           rel="noreferrer"
         >

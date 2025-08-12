@@ -153,13 +153,27 @@ const Portfolio = ({ articles }: { articles: Article[] }): JSX.Element => {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://dev.to/api/articles?username=klawingco')
-  const articles = await res.json()
+  const articles = [
+    {
+      title: "Member",
+      organization: "International Solid Waste Association (ISWA)",
+      description:
+        "Active participation in international waste management forums, access to global best practices, and networking with professionals in over 100 countries.",
+    },
+    {
+      title: "Registered Engineer",
+      organization: "Jordan Engineers Association (JEA)",
+      description:
+        "Licensed civil engineer in Jordan, engaged in professional development programs and technical committees.",
+    },
+  ];
+
   return {
     props: {
       articles,
     },
-  }
+  };
 }
+
 
 export default Portfolio
