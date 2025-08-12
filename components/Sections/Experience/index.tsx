@@ -21,7 +21,7 @@ const DetailSection = () => (
       which allowed me to develop and refine my expertise in environmental consultancy and waste management.
       These experiences have enriched my skills and broadened my professional horizon.
       Currently, I am working with{' '}
-      <Link href="https://greenplans.com" target="_blank" rel="noreferrer" color="teal.500" fontWeight="bold">
+      <Link href="https://greenplans.org" target="_blank" rel="noreferrer" color="teal.500" fontWeight="bold">
         GREENPLANS Environmental Consultations Co. Ltd.
       </Link>
       , and have collaborated on projects with international partners such as{' '}
@@ -37,7 +37,7 @@ const DetailSection = () => (
         Federation of Canadian Municipalities (FCM)
       </Link>
       , and{' '}
-      <Link href="https://dimetric.com" target="_blank" rel="noreferrer" color="teal.500" fontWeight="bold">
+      <Link href="https://dimetric.net" target="_blank" rel="noreferrer" color="teal.500" fontWeight="bold">
         DIMETRIC
       </Link>
       .
