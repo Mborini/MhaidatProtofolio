@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react'
 import {
   GiRecycle,
-  GiRecycleBin,
   GiFactory,
   GiRoad,
   GiTeamUpgrade,
@@ -71,7 +70,7 @@ const Detail = ({ onOpen }: ISkillSetModal) => {
             Municipal Solid Waste Management
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
-            <ListIcon as={GiRecycleBin} color={emphasis} fontSize="2em" />
+            <ListIcon as={GiRecycle} color={emphasis} fontSize="2em" />
             Recycling Systems Design
           </ListItem>
           <ListItem fontSize="small" display="flex" alignItems="center">
